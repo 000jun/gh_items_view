@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 from streamlit_dynamic_filters import DynamicFilters
 
-st.header("진로센터 물품조사 페이지", divider='rainbow')
+st.set_page_config(page_title="진로 내역", layout="wide")
+st.header("진로 물품조사 페이지", divider='rainbow')
 
 # 데이터프레임 처리
 df = pd.read_excel('진로센터.xlsx') # 파일명 확인 : 행복센터, 무계센터 -> happy
